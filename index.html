@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Day Calisthenics Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>30-Day Calisthenics Challenge</h1>
+            <p>Beginner Workout Plan with Dumbbells (2kg)</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="progress-container">
+            <h2>Your Progress <i class="fas fa-chart-line"></i></h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <p>Day <span id="current-day">1</span> of 30 • <span id="percentage">3%</span> Complete</p>
+        </div>
+        
+        <!-- Day 1 Content -->
+        <div id="day-1" class="day-container">
+            <h2><i class="far fa-calendar-alt"></i> Day 1: Full Body Introduction</h2>
+            
+            <div class="exercise">
+                <h3><i class="fas fa-fire"></i> 1. Warm-up: Jumping Jacks</h3>
+                <img src="images/jumping-jacks.jpg" alt="Jumping Jacks">
+                <div class="exercise-details">
+                    <p>Start with 2 minutes of jumping jacks to get your heart rate up and warm up your muscles.</p>
+                    <div class="sets-reps">
+                        <span><i class="far fa-clock"></i> Duration: 2 minutes</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exercise">
+                <h3><i class="fas fa-dumbbell"></i> 2. Bodyweight Squats</h3>
+                <img src="images/squats.jpg" alt="Bodyweight Squats">
+                <div class="exercise-details">
+                    <p>Stand with feet shoulder-width apart, lower your body by bending your knees, then push back up.</p>
+                    <div class="sets-reps">
+                        <span><i class="fas fa-redo"></i> Sets: 3</span>
+                        <span><i class="fas fa-hashtag"></i> Reps: 12</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exercise">
+                <h3><i class="fas fa-dumbbell"></i> 3. Dumbbell Shoulder Press</h3>
+                <img src="images/shoulder-press.jpg" alt="Dumbbell Shoulder Press">
+                <div class="exercise-details">
+                    <p>Hold dumbbells at shoulder height, press upward until arms are extended, then lower slowly.</p>
+                    <div class="sets-reps">
+                        <span><i class="fas fa-redo"></i> Sets: 3</span>
+                        <span><i class="fas fa-hashtag"></i> Reps: 10</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exercise">
+                <h3><i class="fas fa-fire"></i> 4. Plank</h3>
+                <img src="images/plank.jpg" alt="Plank">
+                <div class="exercise-details">
+                    <p>Hold a push-up position with your body straight from head to heels.</p>
+                    <div class="sets-reps">
+                        <span><i class="far fa-clock"></i> Duration: 30 seconds</span>
+                        <span><i class="fas fa-redo"></i> Sets: 3</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-complete" onclick="completeDay(1)">
+                <i class="fas fa-check-circle"></i> Complete Day 1
+            </button>
+        </div>
+        
+        <!-- Days 2-30 would follow similar structure -->
+        <!-- Day 2 -->
+        <div id="day-2" class="day-container hidden">
+            <h2><i class="far fa-calendar-alt"></i> Day 2: Core Focus</h2>
+            <!-- Exercises for Day 2 -->
+            <button class="btn btn-complete" onclick="completeDay(2)">
+                <i class="fas fa-check-circle"></i> Complete Day 2
+            </button>
+        </div>
+        
+        <!-- Continue this pattern up to Day 30 -->
+        
+        <!-- Congratulations Screen -->
+        <div id="congrats" class="day-container hidden">
+            <h2><i class="fas fa-trophy"></i> Congratulations!</h2>
+            <img src="images/congrats.jpg" alt="Celebration" class="congrats-img">
+            <p>You've successfully completed the 30-Day Calisthenics Challenge!</p>
+            <p>Your consistency and hard work have paid off. Keep up the great work!</p>
+            <div class="final-stats">
+                <p><i class="fas fa-check-circle"></i> <strong>30</strong> workouts completed</p>
+                <p><i class="fas fa-fire"></i> <strong>100%</strong> commitment</p>
+                <p><i class="fas fa-heart"></i> <strong>Improved</strong> fitness level</p>
+            </div>
+            <button class="btn" onclick="resetChallenge()">
+                <i class="fas fa-sync-alt"></i> Start Again
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>30-Day Calisthenics Challenge • Designed for Beginners</p>
+            <p class="disclaimer">Consult your doctor before starting any exercise program.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
